@@ -14,4 +14,8 @@ ls -a
 
 cd wordpress-develop
 
+cp wp-tests-config-sample.php wp-tests-config.php
+
+composer update -W
+
 ls -a
