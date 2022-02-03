@@ -1,0 +1,12 @@
+name: 'WP PHPUnit'
+description: 'Runs a PHPUnit test on a  WordPress Plugin'
+author: 'EvrPress'
+branding:
+  icon: 'upload-cloud'
+  color: 'blue'
+runs:
+  using: 'composite'
+  steps:
+    - id: convert
+      run: ${{ github.action_path }}/phpunit.sh
+      shell: bash
